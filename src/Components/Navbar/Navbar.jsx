@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css'
+import './navbar.css'
 import htmlLogo from '../../assets/html.png'
 import jsLogo from '../../assets/js.svg'
 import codeLogo from '../../assets/code.png'
