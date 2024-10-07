@@ -1,0 +1,35 @@
+.navbar{
+    font-family: "DM Sans", system-ui;
+    width: 20%;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+a , .app-title{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    padding: 15px 30px;
+    
+}
+
+.navbar a:hover{
+    color: #716ad1;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.app-title{
+    display: flex;
+    align-items: center;
+}
+
+.app-title h3{
+    color: #2318be;
+}
