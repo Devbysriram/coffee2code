@@ -5,10 +5,7 @@ import Js from './Components/JS/Js';
 
 
 const App = () => {
-  return (
-
-
-      
+  return (      
       <Routes>
         <Route path="/" element={<HtmlEditor />} />
         <Route path="/js" element={<Js />} />
