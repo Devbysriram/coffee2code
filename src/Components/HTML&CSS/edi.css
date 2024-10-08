@@ -1,67 +1,68 @@
 .main {
   display: flex;
   height: 100vh;
-  width: 100%;
 }
 
 .app {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #1e1e1e;
-  width: 80%;
+  flex-grow: 1;
 }
 
 .tabs {
   display: flex;
-  background-color: #252526;
-  border-bottom: 1px solid #3c3c3c;
+  background-color: #333;
+  padding: 10px;
 }
 
 .tab {
+  background-color: #444;
+  color: #fff;
   padding: 10px 20px;
-  background-color: transparent;
   border: none;
-  color: #cccccc;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
-
-.tab:hover {
-  background-color: #2d2d2d;
 }
 
 .tab.active {
-  background-color: #1e1e1e;
-  border-top: 2px solid #007acc;
+  background-color: #007BFF;
 }
 
 .editor-container {
-  display: flex;
-  flex: 1;
-}
-
-.editor {
-  flex: 1;
-  padding: 10px;
-  font-size: 10px;
-}
-
-.editor h4 {
-  color: #cccccc;
-  margin-bottom: 10px;
-  font-size: 14px;
+  flex-grow: 1;
+  background-color: #000000;
+  height: 90vh;
 }
 
 .output-container {
-  flex: 1;
-  background-color: #ffffff;
+  height: calc(100vh - 120px);
+  background-color: #f0f0f0;
 }
 
 .output-iframe {
-  border: none;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: 100%;
+  border: none;
 }
 
+@media (max-width: 768px) {
+  .tabs {
+      flex-direction: column;
+  }
+
+  .tab {
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .main {
+      padding-top: 0;
+  }
+
+  .navbar {
+      display: none; /* Hide Navbar on mobile */
+  }
+
+  .editor-container {
+      padding: 10px;
+  }
+}
